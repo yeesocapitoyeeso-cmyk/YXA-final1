@@ -11,14 +11,14 @@ void main() {
   runApp(const CampusChatApp());
 }
 
-/// 🧩 Get backend URL depending on platform
+/// Get backend URL depending on platform
 String getBackendUrl() {
   if (kIsWeb) return "http://127.0.0.1:8000";
   if (Platform.isAndroid) return "http://10.0.2.2:8000";
   return "http://127.0.0.1:8000";
 }
 
-/// 🏫 Root app
+/// Root app
 class CampusChatApp extends StatefulWidget {
   const CampusChatApp({super.key});
 
