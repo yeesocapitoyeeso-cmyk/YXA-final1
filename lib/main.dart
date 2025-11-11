@@ -1306,7 +1306,7 @@ class _ChatScreenState extends State<ChatScreen> {
           Message(
             sender: "bot",
             text:
-                "❌ Cannot connect to backend. Please check if the server is running.",
+                "Cannot connect to backend. Please check if the server is running.",
             timestamp: DateTime.now(),
           ),
         );
