@@ -11,14 +11,14 @@ void main() {
   runApp(const CampusChatApp());
 }
 
-/// Get backend URL depending on platform
+/// 🧩 Get backend URL depending on platform
 String getBackendUrl() {
   if (kIsWeb) return "http://127.0.0.1:8000";
   if (Platform.isAndroid) return "http://10.0.2.2:8000";
   return "http://127.0.0.1:8000";
 }
 
-/// Root app
+/// 🏫 Root app
 class CampusChatApp extends StatefulWidget {
   const CampusChatApp({super.key});
 
@@ -38,7 +38,7 @@ class _CampusChatAppState extends State<CampusChatApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Campus Chatbot",
+      title: "YXA Campus Chatbot",
       debugShowCheckedModeBanner: false,
       themeMode: _themeMode,
       theme: ThemeData(
@@ -283,7 +283,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("🎓 Campus Chat Login"),
+        title: const Text("YXA Campus Chat Login"),
         backgroundColor: const Color(0xFF8A2020),
         foregroundColor: Colors.white,
       ),
@@ -311,13 +311,13 @@ class LoginScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                "Welcome to Campus Chatbot",
+                "Welcome to YXA Campus Chatbot",
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 10),
               const Text(
-                "Your AI assistant for campus information",
+                "Your YXA AI assistant for campus information",
                 style: TextStyle(fontSize: 16, color: Colors.grey),
                 textAlign: TextAlign.center,
               ),
@@ -1306,7 +1306,7 @@ class _ChatScreenState extends State<ChatScreen> {
           Message(
             sender: "bot",
             text:
-                "Cannot connect to backend. Please check if the server is running.",
+                "❌ Cannot connect to backend. Please check if the server is running.",
             timestamp: DateTime.now(),
           ),
         );
